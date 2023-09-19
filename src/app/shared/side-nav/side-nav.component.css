@@ -1,0 +1,36 @@
+/* Reset default margin and padding */
+nav, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Define the styles for the side navigation */
+  .side-nav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .side-nav-links {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .side-nav-links li {
+    margin-bottom: 10px;
+  }
+  
+  .side-nav-links a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  
+  .side-nav-links a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,42 @@
+
+  <div class="container">
+    <h2>Create Student</h2>
+    <p>create-student works!</p>
+
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="number" id="id" formControlName="id" required />
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" formControlName="name" required />
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" formControlName="address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input type="number" id="class" formControlName="class" required />
+      </div>
+      <div class="form-group">
+        <label for="editedDivision">Division</label>
+        <!-- The formControlName directive is used to bind the select input to the mySelect form control. -->
+        <select formControlName="division">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="teacherId">Select Teacher:</label>
+        <select id="teacherId" formControlName="teacherId" class="form-control">
+          <option value="">Select a teacher</option>
+          <option *ngFor="let teacher of teachers" [value]="teacher.id">{{ teacher.name }}</option>
+        </select>
+      </div>
+      <button type="submit">Create</button>
+    </form>
+  </div>

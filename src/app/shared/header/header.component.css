@@ -1,0 +1,35 @@
+/* Header styles */
+header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the links */
+    padding: 10px 0; /* Padding at the top and bottom of the header */
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    max-width: 1200px; /* Limit the width of the navigation container */
+    margin: 0 auto; /* Center the navigation horizontally */
+    padding: 0 20px; /* Add padding to the left and right of the navigation */
+  }
+  
+  .navbar-links {
+    list-style-type: none; /* Remove the list bullet points */
+    padding: 0; /* Remove default padding on the list */
+  }
+  
+  .navbar-links li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+  }
+  
+  .navbar-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for the links */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+  }
+  
+  .navbar-links a:hover {
+    color: #ff6600; /* Change text color on hover */
+  }
+  

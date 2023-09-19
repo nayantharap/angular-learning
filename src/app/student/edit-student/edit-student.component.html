@@ -1,0 +1,24 @@
+<div class="edit-student-container" *ngIf="student">
+    <h3>Edit Student</h3>
+    <form>
+      <div class="form-group">
+        <label for="editedName">Name</label>
+        <input type="text" id="editedName" [(ngModel)]="student.name" name="name" />
+        <!-- Add the name attribute here -->
+      </div>
+      <div class="form-group">
+        <label for="editedDivision">Division</label>
+        <select id="editedDivision" [(ngModel)]="student.division" name="division">
+          <!-- Add the name attribute here -->
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <button (click)="saveStudent()">Save</button>
+      <button (click)="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+  

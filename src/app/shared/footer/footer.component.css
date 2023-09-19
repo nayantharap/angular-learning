@@ -1,0 +1,42 @@
+/* Footer styles */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the content */
+    padding: 20px 0; /* Padding at the top and bottom of the footer */
+    text-align: center; /* Center align text within the footer */
+  }
+  
+  /* Footer content styles */
+  .footer-content {
+    max-width: 1200px; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center the footer content horizontally */
+    padding: 0 20px; /* Add padding to the left and right of the footer content */
+  }
+  
+  /* Copyright text styles */
+  .footer-content p {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  /* Footer links styles */
+  .footer-links {
+    list-style-type: none; /* Remove the list bullet points */
+    padding: 0; /* Remove default padding on the list */
+    margin-top: 10px; /* Add space between the copyright text and links */
+  }
+  
+  .footer-links li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+  }
+  
+  .footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for the links */
+    transition: color 0.3s; /* Add a smooth color transition effect */
+  }
+  
+  .footer-links a:hover {
+    color: #ff6600; /* Change text color on hover */
+  }
+  

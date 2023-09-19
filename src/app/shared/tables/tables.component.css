@@ -1,0 +1,72 @@
+/* Styles for the success message */
+.changes-saved-message {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Style for the common table */
+.common-table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header row style */
+.common-table th {
+  background-color: #f2f2f2;
+  padding: 0.2rem 0.2rem;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+/* Body row style */
+.common-table td {
+  padding: 0.2rem 0.2rem;
+  border: 1px solid #ccc;
+  border-top: none; /* Remove top border */
+}
+
+.common-table tbody tr:first-child td {
+  border-top: 1px solid #ccc;
+}
+
+/* Alternating row background color */
+.common-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+/* Button style */
+.common-table button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect for buttons */
+.common-table button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling specific to teachers' table */
+.teacher-tables {
+  /* Add any specific styles for teachers' table here */
+}
+
+/* Additional styling specific to students' table */
+.student-tables {
+  /* Add any specific styles for students' table here */
+}
+
+/* Reduce margin and padding for the teachers container */
+.teachers-container {
+  margin: 0;
+  padding: 10px;
+}

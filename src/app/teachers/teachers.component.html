@@ -1,0 +1,60 @@
+<div >
+  <h2>Teachers</h2>
+  <app-tables>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Students</th>
+        <!-- Add a new column for the "Students" button -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let teacher of schoolData?.teachers">
+        <td>{{ teacher.id }}</td>
+        <td>{{ teacher.name }}</td>
+        <td>{{ teacher.subject }}</td>
+        <td>
+          <button (click)="showStudents(teacher.id)">View Students</button>
+        </td>
+        <td>
+          <button class="btn btn-link" (click)="editTeacher(teacher)">
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </app-tables>
+
+  <!--Students of Teachers app-tables -->
+  <app-tables *ngIf="selectedTeacherStudents" class="common-table">
+    <thead>
+      <th>Students taught by this Teacher:</th>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Division</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of selectedTeacherStudents">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.division }}</td>
+      </tr>
+    </tbody>
+  </app-tables>
+
+  <!-- Editing options -->
+  <app-edit-teacher
+    *ngIf="selectedTeacher"
+    [teacher]="selectedTeacher"
+    (save)="saveTeacher($event)"
+    (cancel)="cancelEdit()"
+  ></app-edit-teacher>
+
+  <div *ngIf="changesSaved" class="changes-saved-message">
+    The Teacher is edited successfully.
+  </div>
+</div>
